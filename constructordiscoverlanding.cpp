@@ -32,3 +32,22 @@ mahasiswa::mahasiswa(int inim, string inama)
     nama = inama; // definisi hanya nim nama
 }
 
+void mahasiswa::cetak()
+{
+    cout << endl << "nim = " << nim << endl;
+    cout << "nama = " << nama << endl;
+}
+
+int main() 
+{
+    mahasiswa mhs1(53401);           // hanya nim
+    mahasiswa mhs2("fadhil");         // hanya nama
+    mahasiswa mhs3(2045401, "Bagus"); // nim dan nama
+
+    //tampilkan nilai
+    cout << "mahasiswa 1 : "; mhs1.cetak();
+    cout << "mahasiswa 2 : "; mhs2.cetak();
+    cout << "mahasiswa 3 : "; mhs3.cetak();
+
+    return 0;
+}
