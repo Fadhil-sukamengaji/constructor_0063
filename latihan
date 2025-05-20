@@ -1,0 +1,45 @@
+//buatlah program c++ dengan class barang yang memiliki atribut: namaBarang,
+//kodeBarang
+//program memiliki constructor berparameter
+//untuk mengisi nilai namaBarang dan KodeBarang.
+//serta memiliki fungsi untuk menampilkan informasi barang.
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Barang 
+{
+    private:
+        string namaBarang;
+        string kodeBarang;
+
+    public:
+    
+        Barang(string nama, string kode) 
+        {
+            namaBarang = nama;
+            kodeBarang = kode;
+        }
+
+    void tampilkanInformasi() 
+        {
+            cout << "nama Barang : " << namaBarang << endl;
+            cout << "kode Barang : " << kodeBarang << endl;
+        }
+};
+
+
+int main() {
+    string nama, kode;
+    cout << "masukkan Nama Barang : ";
+    cin >> nama;
+    cout << "masukkan Kode Barang : ";
+    cin >> kode;
+    Barang barang1(nama, kode);
+    cout << "\ninformasi barang\n";
+    barang1.tampilkanInformasi();
+    return 0;
+}
