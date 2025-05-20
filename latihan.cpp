@@ -33,13 +33,10 @@ class Barang
 
 
 int main() {
-    string nama, kode;
-    cout << "masukkan Nama Barang : ";
-    cin >> nama;
-    cout << "masukkan Kode Barang : ";
-    cin >> kode;
-    Barang barang1(nama, kode);
-    cout << "\ninformasi barang\n";
+
+    Barang barang1("knalpot", "0025");
+
     barang1.tampilkanInformasi();
+
     return 0;
 }
